@@ -51,6 +51,9 @@ class PlayChooseTheLeader(private val teacher: Teacher, private var listOfStuden
                     }
                     return DEFAULT_VALUE
                 }
+                // I need to move the teacher to a valid student position.
+                // I will go until I find at least one student and not null. Because all null positions
+                // are eliminated students
                 do {
                     ++studentPosition
                     studentPosition %= totalStudentsInTheClass
